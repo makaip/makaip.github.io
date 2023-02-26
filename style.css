@@ -1,0 +1,34 @@
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+p {
+    font-family: 'Golos Text', sans-serif;
+}
+button {
+    transition-duration: 0.2s;
+    border-radius: 100px;
+    padding: 1px 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Golos Text', sans-serif;
+}
+button:hover {
+    background-color: white;
+    color: black;
+}
+.spe {
+    color: orangered;
+}
+.reg {
+    padding: 10px 10%;
+    border: solid;
+    border-radius: 16px;
+    max-width: 500px;
+    margin: auto;
+}
+.sec {
+    padding: 10px 10%;
+    border: none;
+    max-width: 500px;
+    margin: auto;
+}
