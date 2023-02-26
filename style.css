@@ -1,5 +1,10 @@
 h1 {
     font-family: 'Playfair Display', serif;
+    font-size: 48px;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
 }
 p {
     font-family: 'Golos Text', sans-serif;
@@ -17,7 +22,7 @@ button:hover {
     color: black;
 }
 .spe {
-    color: orangered;
+    color: #91ccf6;
 }
 .reg {
     padding: 10px 10%;
@@ -31,4 +36,21 @@ button:hover {
     border: none;
     max-width: 500px;
     margin: auto;
+}
+.par {
+    color: white;
+    padding: 10px 10%;
+    border: none;
+    border-radius: 16px;
+    max-width: 500px;
+    margin: auto;
+    background-image: url("wallpapernew.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logonav {
+    
 }
