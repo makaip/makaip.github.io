@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Playfair+Display:wght@700&display=swap');
+
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
@@ -6,43 +8,103 @@ h2 {
     font-family: 'Playfair Display', serif;
     font-size: 32px;
 }
-p {
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+p, li {
     font-family: 'Golos Text', sans-serif;
+    margin: 10px 5px;
+}
+img {
+    border-radius: 16px;
 }
 button {
     transition-duration: 0.2s;
     border-radius: 100px;
-    padding: 1px 10px;
+    padding: 5px 15px;
     background-color: black;
     color: white;
     font-family: 'Golos Text', sans-serif;
+    border: none;
+    margin: 10px 5px;
 }
 button:hover {
-    background-color: white;
-    color: black;
+    background-color: #31b1b5;
+    color: white;
 }
-.spe {
-    color: #91ccf6;
-}
-.reg {
-    padding: 10px 10%;
+
+input {
     border: solid;
     border-radius: 16px;
-    max-width: 500px;
+    padding: 5px 10px;
+    font-family: 'Golos Text', sans-serif;
+}
+
+.spe {
+    color: #31b1b5;
+}
+.reg {
+    padding: 10px 5%;
+    border: solid;
+    border-radius: 16px;
+    max-width: 700px;
     margin: auto;
 }
 .sec {
-    padding: 10px 10%;
+    padding: 10px 5%;
     border: none;
-    max-width: 500px;
+    max-width: 700px;
     margin: auto;
+}
+.em {
+    padding: 10px 5%;
+    border: none;
+    border-radius: 16px;
+    max-width: 700px;
+    margin: auto;
+    background-color: #31b1b5;
+    color: white;
+}
+.em button {
+    transition-duration: 0.2s;
+    border-radius: 100px;
+    padding: 5px 15px;
+    background-color: white;
+    color: black;
+    font-family: 'Golos Text', sans-serif;
+    margin: 10px 5px;
+}
+.em button:hover {
+    background-color: black;
+    color: white;
+}
+.grid {
+    padding: 10px 1%;
+    border: none;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+}
+.card {
+    -webkit-transition-duration: 0.25s; /* Safari */
+    transition-duration: 0.25s;
+    border-radius: 8px;
+    border: solid;
+    padding: 20 5%;
+    margin: 2%;
+    width: 50%;
+    display: inline-grid;
+}
+.card:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    transform: translateY(-5px);
 }
 .par {
     color: white;
     padding: 10px 10%;
     border: none;
     border-radius: 16px;
-    max-width: 500px;
+    max-width: 700px;
     margin: auto;
     background-image: url("wallpapernew.jpg");
     /* Create the parallax scrolling effect */
@@ -51,6 +113,18 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.logonav {
-    
+
+nav {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 1px;
+    overflow: hidden;
+}
+.navsection {
+    padding: 10px;
+    float: right;
+    display: inline;
 }
