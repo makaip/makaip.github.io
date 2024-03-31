@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Playfair+Display:wght@700&display=swap');
 
+:root {
+    --accent: #2f6156;
+
+}
+body {
+    background-color: white;
+    text-align: center;
+}
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
@@ -29,7 +37,7 @@ button {
     margin: 10px 5px;
 }
 button:hover {
-    background-color: #31b1b5;
+    background-color: var(--accent);
     color: white;
 }
 
@@ -41,28 +49,32 @@ input {
 }
 
 .spe {
-    color: #31b1b5;
+    color: var(--accent);
 }
 .reg {
+    text-align: left;
     padding: 10px 5%;
     border: solid;
+    border-color: var(--accent);
     border-radius: 16px;
     max-width: 700px;
     margin: auto;
 }
 .sec {
+    text-align: left;
     padding: 10px 5%;
     border: none;
     max-width: 700px;
     margin: auto;
 }
 .em {
+    text-align: left;
     padding: 10px 5%;
     border: none;
     border-radius: 16px;
     max-width: 700px;
     margin: auto;
-    background-color: #31b1b5;
+    background-color: var(--accent);
     color: white;
 }
 .em button {
@@ -100,7 +112,7 @@ input {
     transform: translateY(-5px);
 }
 .par {
-    color: white;
+    color: black;
     padding: 10px 10%;
     border: none;
     border-radius: 16px;
@@ -109,7 +121,7 @@ input {
     background-image: url("wallpapernew.jpg");
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    background-position: 50% -100px;
     background-repeat: no-repeat;
     background-size: cover;
 }
