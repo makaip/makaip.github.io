@@ -1,80 +1,114 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Makai P</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <style>
+            .material-symbols-outlined {
+              font-variation-settings:
+              'FILL' 0,
+              'wght' 400,
+              'GRAD' 0,
+              'opsz' 24
+            }
+        </style>
+    </head>
     <body>
-        <br>
-        <br>
-        <div class="par">
-            <br>
-            <br>
-            <h1>Welcome to <span class="spe">my website</span></h1>
-            <p>Makai P.</p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <button onclick=" document.querySelector('#mathematix').scrollIntoView({behavior: 'smooth'});">Mathematix</button>
-            <button onclick=" document.querySelector('#clevulator').scrollIntoView({behavior: 'smooth'});">Clevulator</button>
-            <button onclick=" document.querySelector('#bakify').scrollIntoView({behavior: 'smooth'});">Bakify</button>
-            <br>
-            <br>
-            <br>
-
-        </div>
-        <br>
-        <br>
-        <div class="em" id="mathematix">
-            <h2>Mathematix</h2>
-            <p>Mathematix is a nodeblock-based math webapp, designed to make the graphic calculator more accessible and easy to use. Using node blocks, the interface allows users to drag and drop mathematical operations, enabling them to connect them together in order to calculate certain functions.</p>
-            <button onclick="location.href = 'mathematix/index.html'">Go to Mathematix</button>
-            <br>
-            <br>
-        </div>
-        <br>
-        <br>
-        <img src="https://github.com/makaip/mathematix/assets/98898166/3f581f15-5e96-402a-bdbc-c68c58e43e32" width="790px"></img>
-        <br>
-        <br>
-        <div class="reg" id="bakify">
-            <h2>Bakify</h2>
-            <p>
-                Bakify, an online web application originally created for Ms. Baker's class, is designed to help users improve their writing by identifying and replacing analytical never-words. By highlighting these weak words that can obstruct your message, Bakify potentially enhances your writing. Additionally, the application automatically switches to dark mode at night for optimal user experience. As Bakify is still in beta, any feedback or suggestions from programmers would be appreciated and can be submitted through the website's built-in form. Keep in mind that not all features are currently available, but Bakify will continue to evolve and improve.
-            </p>
-            <p>
-                With over 118 different analytical never-words already included, Bakify offers users the ability to scan their writing quickly and easily. While weak verb support is not yet available, it is coming soon. The application saves time by suggesting synonymous terms and may add more analytical never-words and weak verbs as it continues to develop.
-            </p>
-            <br>
-            <button onclick="location.href = 'bakify/index.html'">Go to Bakify</button>
-            <br>
-            <br>
-        </div>
-        <br>
-        <br>
-        <div class="sec" id="clevulator">
-            <img src="img1.png" width="400px" style="float: left; margin-top: 15; margin-right: 20px;"></img>
-            <h2>Mr. Clevenger Simulator</h2>
-            <p>Written in C#, advanced Unity Simulation technology enables an accurate simulation of Mr. Clevenger (my history teacher) in real time. The player can play as Mr. Clevenger using a series of complex motions using state-of-the-art motion tracking technology, made available by Adobe Mixamo.</p> 
-            <p> Furthermore, Unity Navmesh calculations allow for more realistic NPCs, which are able to walk, talk, and interact with their environment. The environment was created using reality capture software <em>Scaniverse</em> to create accurately-scaled models.</p>
-            <button onclick="location.href = 'clevulatorweb/index.html'">Go to Clevulator</button>
-            <br>
-        </div>
-        <br>
-        <br>
         <div class="em">
-            <h2>Thank you for reading.</h2>
-            <p>Wallpaper <a href="https://cdnb.artstation.com/p/assets/images/images/006/771/819/large/daka-dibuja-5-manana.jpg?1501127228">Here</a></p>
+            <br>
+            <div class="em-main">
+                <h1>Welcome to my website.</h1>
+                <p>My humble corner of the internet. Enjoyer of comptuers, Blender, music creation, and such.</p>
+            </div>
+            <br>
+            <br>
             <br>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        
-    </body>
+        <div class="header" id="header">
+            <button onclick="document.querySelector('#about').scrollIntoView({behavior: 'smooth'});">About</button>
+            <button onclick="document.querySelector('#code').scrollIntoView({behavior: 'smooth'});">Code</button>
+            <button onclick="document.querySelector('#blender').scrollIntoView({behavior: 'smooth'});">Blender</button>
+            <button onclick="document.querySelector('#experience').scrollIntoView({behavior: 'smooth'});">Experience</button>
+        </div>
+        <div class="main">
+            <div id="about">
+                <h2>ok whos dis lil jit</h2>
+                <p>Honestly I'm not sure either so you're gonna have to figure that one out. I make stuff and do cool things, I guess... I'm also 15. I am enrolled full-time at a University, where I also work as a data analyst in Ocean & Climate Change research.</p>
+            </div>
+            <div id="code">
+                <h2>Stuff I Coded</h2>
+                <div class="container">
+                    <h3>Mathematix</h3>
+                    <p>Lead developer and creator of Mathematix, a nodeblock-based math webapp designed to make  graphing calculators more accessible and easy to use. Using node blocks, the interface allows users to drag and drop mathematical operations, enabling them to connect them together in order to calculate certain functions. It is designed to be ultra-lightweight, with the entire system created from scratch using JavaScript canvases. The project one first place in the <em>YCW QBitX Hacks</em> Hackathon among over 590 participants nationwide. I also animated a short advertisment in Blender that you can view <a onclick="document.querySelector('#mathematix-vid').scrollIntoView({behavior: 'smooth'});">here</a>.</p>
+                    <a href="https://makaip.com/mathematix"><button>Try It</button></a>
+                    <a href="https://devpost.com/software/mathematix"><button>DevPost</button></a>
+                    <a href="https://github.com/makaip/mathematix"><button>GitHub</button></a>
+                </div>
+                <div class="container">
+                    <h3>Clevulator</h3>
+                    <p>Written in C# and inspired by <em>Goat Simulator</em>, the game was created in the Unity Game Engine to simulate the experience of Mr. Clevenger (my former history teacher). The player can play as Mr. Clevenger using state-of-the-art motion tracking technology made available by Adobe Mixamo. Furthermore, Unity Navmesh allow for more realistic NPCs, which are able to walk, talk, and interact with their environment. The environment was created using reality capture software <em>Scaniverse</em> to create accurately-scaled models.</p> 
+                    <a href="https://clevulator.makaip.com/"><button>Try It</button></a>
+                </div>
+                <div class="container">
+                    <h3>Bakify</h3>
+                    <p>Bakify, an online web application originally created for Ms. Baker's class, is designed to help users improve their writing by identifying and replacing analytical never-words. By highlighting these weak words that can obstruct your message, Bakify potentially enhances your writing. Additionally, the application automatically switches to dark mode at night for optimal user experience. As Bakify is still in beta, any feedback or suggestions from programmers would be appreciated and can be submitted through the website's built-in form. Keep in mind that not all features are currently available, but Bakify will continue to evolve and improve.</p>
+                    <button>Try It</button>
+                    <button>GitHub</button>
+                </div>
+                <div class="container">
+                    <h3>Multiplayer Sudoku</h3>
+                    <p>Helped with UX/UI design and light frontend development in Alex Castronovo's <em>Multiplayer Sudoku</em>, which you can play online and check out on his website. Alex did all the hard stuff I just made it look pretty lol. </p>
+                    <button>Try It</button>
+                </div>
+            </div>
+            <div id="blender">
+                <h2>Stuff I Blended</h2>
+                <div>
+                    <div class="image-grid">
+                        <div class="image-item" data-type="img" data-src="/renders/RetroLivingroom.png"><img id="1" src="/renders/RetroLivingroom.png" alt=""></div>
+                        <div class="image-item" data-type="img" data-src="/renders/Computer1.gif"><img id="2" src="/renders/Computer1.gif" alt=""></img></div>
+                        <div class="image-item" data-type="img" data-src="/renders/Computer4.png"><img id="3" src="/renders/Computer4.png" alt=""></div>
+                        <div class="image-item" data-type="video" data-src="/renders/Mathematix.mp4"><span id="mathematix-vid"></span><video id="4" src="/renders/EeveeAbstract.mp4" alt=""></video></div>
+                        <div class="image-item" data-type="img" data-src="/renders/Field1.png"><img id="5" src="/renders/Field1.png" alt=""></div>
+                        <div class="image-item" data-type="video" data-src="/renders/PlaneFinalWide.mp4"><video id="6" src="/renders/PlaneFinalWide.mp4" alt=""></video></div>
+                    </div>
+                    <p>These were all very fun to make. </p>
+                </div>
+            </div>
+            <div id="experience">
+                <h2>boring work & school stuff</h2>
+                <ul>
+                    <li>in university since 2023</li>
+                    <li>in a cool lab as a data analyst since 2024 focusing on ocean research</li>
+                    <li>in a internship that uses knowledge graphs to accelerate novel drug discovery (experience with AWS, EC2s, S3 Buckets, Neptune, SPARQL, etc.)</li>
+                    <li>got a grant to do research in LLMs</li>
+                </ul>
+            </div>
+            <div>
+                <p>That's pretty much it, but thanks for reading. </p>
+                <p>im prob gonna finish this later i dont rlly feel like working on it rn</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p>ok bye lol</p>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal" style="display: none;">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+                <img id="modal-img" class="modal-media">
+                <video id="modal-video" class="modal-media" autoplay controls loop></video>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>        
 </html>
