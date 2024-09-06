@@ -35,24 +35,36 @@
         <div class="main">
             <div id="about">
                 <h2>About</h2>
-                <p>Welcome! I enjoy coding, Blender, and music. I am familliar with these languages.</p>
+                <p>Welcome! I enjoy coding, Blender, and music. I am familliar with these skills.</p>
 
                 <div style="text-align: center;">
-                    <img src="https://skillicons.dev/icons?i=html,css,js,flask,vue,py,c,cpp,cs,matlab,bash"><br>
-                    <img src="https://skillicons.dev/icons?i=unity,blender,anaconda,aws,git,docker,neovim,nodejs,nuxtjs,pytorch,raspberrypi,sklearn,">
+                    <img src="https://skillicons.dev/icons?i=html,css,js,nodejs">
+                    <img src="https://skillicons.dev/icons?i=flask,vue,tailwind,nuxtjs">
+                    <img src="https://skillicons.dev/icons?i=py,matlab,c,cpp">
+                    <img src="https://skillicons.dev/icons?i=cs,bash,md,latex">
+                    <img src="https://skillicons.dev/icons?i=unity,blender,figma,anaconda">
+                    <img src="https://skillicons.dev/icons?i=ros,docker,neovim,vscode">
+                    <img src="https://skillicons.dev/icons?i=cloudflare,aws,nginx">
+                    <img src="https://skillicons.dev/icons?i=raspberrypi,arduino,obsidian">
+                    
                 </div>
-
                 <br><br>
                 <p>You can check out my profiles below.</p>
-                <a href="https://github.com/makaip"><button>GitHub</button></a>
-                <a href="https://www.linkedin.com/in/makai-p-8a9953302/"><button>LinkedIn</button></a>
-                <a href="https://monkeytype.com/profile/makaip"><button>MonkeyType</button></a>
+                <div style="text-align: center;">
+                    <a href="https://github.com/makaip"><img src="https://skillicons.dev/icons?i=github"></a>
+                    <a href="https://www.linkedin.com/in/makai-p-8a9953302/"><img src="https://skillicons.dev/icons?i=linkedin"></a>
+                </div>
             </div>
             <div id="code">
                 <h2>Projects</h2>
                 <div class="container">
                     <div class="text-box">
-                        <h3>Mathematix</h3>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h3 style="flex: 1;">Mathematix</h3>
+                            <div style="flex: 1; text-align: right; margin-left: 15px; margin-top: 2px;">
+                                <img src="https://skillicons.dev/icons?i=html,css,js" style=" height: 30px;">
+                            </div>
+                        </div>
                         <p>Lead developer and creator of Mathematix, a nodeblock-based math webapp designed to make  graphing calculators more accessible and easy to use. Using node blocks, the interface allows users to drag and drop mathematical operations, enabling them to connect them together in order to calculate certain functions. It is designed to be ultra-lightweight, with the entire system created from scratch using JavaScript canvases. The project won first place in the <em>YCW QBitX Hacks</em> Hackathon among over 590 participants nationwide. I also animated a short advertisment in Blender that you can view <a onclick="document.querySelector('#mathematix-vid').scrollIntoView({behavior: 'smooth'});">here</a>.</p>
                         <a href="https://makaip.com/mathematix"><button>Try It</button></a>
                         <a href="https://devpost.com/software/mathematix"><button>DevPost</button></a>
@@ -69,14 +81,24 @@
                     </div>
                     <span class="gap"></span>
                     <div class="text-box">
-                        <h3>Clevulator</h3>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h3 style="flex: 1;">Clevulator</h3>
+                            <div style="flex: 1; text-align: right; margin-left: 15px; margin-top: 2px;">
+                                <img src="https://skillicons.dev/icons?i=unity,cs,blender" style=" height: 30px;">
+                            </div>
+                        </div>
                         <p>Written in C# and inspired by <em>Goat Simulator</em>, the game was created in the Unity Game Engine to simulate the experience of Mr. Clevenger (my former history teacher). The player can play as Mr. Clevenger using state-of-the-art motion tracking technology made available by Adobe Mixamo. Furthermore, Unity Navmesh allow for more realistic NPCs, which are able to walk, talk, and interact with their environment. The environment was created using reality capture software <em>Scaniverse</em> to create accurately-scaled models.</p> 
                         <a href="https://clevulator.makaip.com/"><button>Try It</button></a>
                     </div>
                 </div>
                 <div class="container">
                     <div class="text-box">
-                        <h3>Bakify</h3>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h3 style="flex: 1;">Bakify</h3>
+                            <div style="flex: 1; text-align: right; margin-left: 15px; margin-top: 2px;">
+                                <img src="https://skillicons.dev/icons?i=html,css,js" style=" height: 30px;">
+                            </div>
+                        </div>
                         <p>Bakify, an online web application originally created for Ms. Baker's class, is designed to help users improve their writing by identifying and replacing analytical never-words. By highlighting these weak words that can obstruct your message, Bakify potentially enhances your writing. Additionally, the application automatically switches to dark mode at night for optimal user experience. </p>
                         <a href="https://bakify.page"><button>Try It</button></a>
                         <a href="https://github.com/makaip/bakify"><button>GitHub</button></a>
@@ -106,6 +128,9 @@
             </div>
             <div id="blender">
                 <h2>Blender Renders</h2>
+                <p>These were all very fun to make. I have extensive experience in CAD and hard-surface modeling, as well as texturing,
+                    compositing, animation, and lighting. I also used to teach Blender online. Some addons that I used were Traffiq,
+                    Botaniq, Grasswald, Blenderkit, and Ian Hubert's Camera Shake addon</p>
                 <div>
                     <div class="image-grid">
                         <div class="image-item" data-type="img" data-src="/renders/RetroLivingroom.png"><img id="1" src="/renders/RetroLivingroom.png" alt=""></div>
@@ -115,16 +140,15 @@
                         <div class="image-item" data-type="img" data-src="/renders/Field1.png"><img id="5" src="/renders/Field1.png" alt=""></div>
                         <div class="image-item" data-type="video" data-src="/renders/PlaneFinalWide.mp4"><video id="6" src="/renders/PlaneFinalWide.mp4" alt=""></video></div>
                     </div>
-                    <p>These were all very fun to make. </p>
                 </div>
             </div>
             <div id="experience">
                 <h2>Work</h2>
                 <ul>
                     <li>I attend High School and University</li>
-                    <li>I do ocean research in a lab</li>
+                    <li>I do data science in a lab that does ocean research</li>
                     <li>I am a internship that uses knowledge graphs to accelerate novel drug discovery</li>
-                    <li>I got a grant from the university to do research in LLMs</li>
+                    <li>I got a grant to do research in LLMs</li>
                 </ul>
             </div>
             <div>

@@ -78,6 +78,7 @@ footer {
 
 img {
     border-radius: 4px;
+    margin: 2px;
 }
 
 .main,.em-main {
@@ -203,6 +204,8 @@ img {
     height: 100%;
     object-fit: cover;
     cursor: pointer;
+    margin: 0px;
+    border-radius: 0px;
 }
 
 .card-container {
