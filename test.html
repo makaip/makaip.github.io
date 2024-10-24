@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>XP.css example</title>
+    <meta charset="UTF-8" />
+
+    <!-- Windows XP Theme (include only one theme at a time) -->
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+
+</head>
+
+<body style="padding: 30px;">
+    <div class="window" style="width: 800px; margin: auto;">
+        <div class="title-bar">
+            <div class="title-bar-text">My Portfolio</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <menu role="tablist">
+                <button aria-selected="true" id="b1" onclick="
+                    document.getElementById('b1').setAttribute('aria-selected', true);
+                    document.getElementById('b2').setAttribute('aria-selected', false);
+                    document.getElementById('b3').setAttribute('aria-selected', false);
+                    document.getElementById('main').hidden = false;
+                    document.getElementById('sec').hidden = true;
+                    document.getElementById('thr').hidden = true;
+                    ">Main</btton>
+                <button id="b2" onclick="
+                    document.getElementById('b1').setAttribute('aria-selected', false);
+                    document.getElementById('b2').setAttribute('aria-selected', true);
+                    document.getElementById('b3').setAttribute('aria-selected', false);
+                    document.getElementById('main').hidden = true;
+                    document.getElementById('sec').hidden = false;
+                    document.getElementById('thr').hidden = true;
+                ">Code</button>
+                <button id="b3" onclick="
+                    document.getElementById('b1').setAttribute('aria-selected', false);
+                    document.getElementById('b2').setAttribute('aria-selected', false);
+                    document.getElementById('b3').setAttribute('aria-selected', true);
+                    document.getElementById('main').hidden = true;
+                    document.getElementById('sec').hidden = true;
+                    document.getElementById('thr').hidden = false;
+                ">Work</button>
+            </menu>
+            <article role="tabpanel" id="main">
+                <p>select one</p>
+                <fieldset>
+                    <legend>fart poop booty cheeks</legend>
+                    <div class="field-row">
+                        <input id="radio29" type="radio" name="fieldset-example2">
+                        <label for="radio29">Hi lol</label>
+                    </div>
+                    <div class="field-row">
+                        <input id="radio30" type="radio" name="fieldset-example2">
+                        <label for="radio30">Poop</label>
+                    </div>
+                    <div class="field-row">
+                        <input id="radio31" type="radio" name="fieldset-example2">
+                        <label for="radio31">Fart</label>
+                    </div>
+                    <div class="field-row">
+                        <input id="radio32" type="radio" name="fieldset-example2">
+                        <label for="radio32">asdfadsf</label>
+                    </div>
+                </fieldset>
+                <section class="field-row">
+                    <button>Submit</button>
+                    <label>What does this do</label>
+                </section>
+            </article>
+    
+            <article role="tabpanel" id="sec" hidden>
+                <p>Poop</p>
+            </article>
+    
+            <article role="tabpanel" id="thr" hidden>
+                <p>
+                    fksdljafhlsadjhfklsajdhfkljsdhflkajshdfljsadhfl jasdlkf ladsfj l
+                </p>
+            </article>
+
+            <section class="field-row" style="justify-content: flex-end">
+                <button>OK</button>
+                <button>Cancel</button>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
