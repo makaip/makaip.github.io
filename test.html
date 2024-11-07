@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>XP.css example</title>
+    <title>website</title>
     <meta charset="UTF-8" />
 
     <!-- Windows XP Theme (include only one theme at a time) -->
     <link rel="stylesheet" href="https://unpkg.com/xp.css" />
 
 </head>
-
-<body style="padding: 30px;">
+<body style="padding: 30px; background-image: url('bliss.jpg'); background-size: 100%;"></body>
     <div class="window" style="width: 800px; margin: auto;">
         <div class="title-bar">
             <div class="title-bar-text">My Portfolio</div>
@@ -29,6 +27,7 @@
                     document.getElementById('main').hidden = false;
                     document.getElementById('sec').hidden = true;
                     document.getElementById('thr').hidden = true;
+                    document.getElementById('slide').innerText = '1';
                     ">Main</btton>
                 <button id="b2" onclick="
                     document.getElementById('b1').setAttribute('aria-selected', false);
@@ -37,6 +36,7 @@
                     document.getElementById('main').hidden = true;
                     document.getElementById('sec').hidden = false;
                     document.getElementById('thr').hidden = true;
+                    document.getElementById('slide').innerText = '2';
                 ">Code</button>
                 <button id="b3" onclick="
                     document.getElementById('b1').setAttribute('aria-selected', false);
@@ -45,51 +45,134 @@
                     document.getElementById('main').hidden = true;
                     document.getElementById('sec').hidden = true;
                     document.getElementById('thr').hidden = false;
+                    document.getElementById('slide').innerText = '3';
                 ">Work</button>
             </menu>
             <article role="tabpanel" id="main">
-                <p>select one</p>
+                <h4 style="margin-top: 5px; margin-bottom: 10px;">Welcome to my website</h4>
+                <p>My humble corner of the internet. Enjoyer of comptuers, Blender, music creation, and such.</p>
                 <fieldset>
-                    <legend>fart poop booty cheeks</legend>
+                    <legend>Socials</legend>
                     <div class="field-row">
-                        <input id="radio29" type="radio" name="fieldset-example2">
-                        <label for="radio29">Hi lol</label>
+                        <input id="radio29" type="radio">
+                        <label for="radio29">GitHub</label>
                     </div>
                     <div class="field-row">
-                        <input id="radio30" type="radio" name="fieldset-example2">
-                        <label for="radio30">Poop</label>
+                        <input id="radio30" type="radio">
+                        <label for="radio30">Linkedin</label>
                     </div>
                     <div class="field-row">
-                        <input id="radio31" type="radio" name="fieldset-example2">
-                        <label for="radio31">Fart</label>
+                        <input id="radio31" type="radio">
+                        <label for="radio31">Discord</label>
                     </div>
                     <div class="field-row">
-                        <input id="radio32" type="radio" name="fieldset-example2">
-                        <label for="radio32">asdfadsf</label>
+                        <input id="radio32" type="radio">
+                        <label for="radio32">???</label>
                     </div>
                 </fieldset>
                 <section class="field-row">
-                    <button>Submit</button>
-                    <label>What does this do</label>
+                    <button onclick="redirectSocials()">Submit</button>
+                    <label>Open in New Tab</label>
                 </section>
             </article>
-    
+
             <article role="tabpanel" id="sec" hidden>
-                <p>Poop</p>
+                <ul class="tree-view">
+                    <li>Table of Contents</li>
+                    <li>
+                        me
+                        <ul>
+                            <li>code</li>
+                            <li>
+                                <details>
+                                    <summary>langs</summary>
+                                    <ul>
+                                        <li>javascript</li>
+                                        <li>python</li>
+                                        <li>c</li>
+                                        <li>c++</li>
+                                        <li>c#</li>
+                                        <li>
+                                            <details>
+                                                <summary>webdev</summary>
+                                                <ul>
+                                                    <li>flask</li>
+                                                    <li>
+                                                        <details>
+                                                            <summary>nuxt</summary>
+                                                            <ul>
+                                                                <li>vue</li>
+                                                            </ul>
+                                                        </details>
+                                                    </li>
+                                                    <li>
+                                                        <details>
+                                                            <summary>next</summary>
+                                                            <ul>
+                                                                <li>react</li>
+                                                            </ul>
+                                                        </details>
+                                                    </li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>blender</li>
+                            <li>music</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>projects</summary>
+                            <ul>
+                                <li>mathematix</li>
+                                <li>clevulator</li>
+                                <li>opentest</li>
+                                <li>bakify</li>
+                        </details>
+                    </li>
+                </ul>
             </article>
     
             <article role="tabpanel" id="thr" hidden>
-                <p>
-                    fksdljafhlsadjhfklsajdhfkljsdhflkajshdfljsadhfl jasdlkf ladsfj l
-                </p>
+                <p>rate the site</p>
+
+                <div class="field-row" style="width: 300px">
+                    <label for="range25">Coolness:</label>
+                    <label for="range26">Low</label>
+                    <input id="range26" type="range" min="1" max="10" value="9" />
+                    <label for="range27">High</label>
+                </div>
+                <div class="field-row-stacked" style="width: 200px">
+                    <label for="text24">Additional notes</label>
+                    <textarea id="text24" rows="8"></textarea>
+                </div>
+                <br>
+                <button>Ok</button>
             </article>
 
-            <section class="field-row" style="justify-content: flex-end">
-                <button>OK</button>
-                <button>Cancel</button>
-            </section>
+            <br>
+            <div class="status-bar">
+                <p class="status-bar-field">Press F1 for help</p>
+                <p class="status-bar-field">Slide <span id="slide">1</span></p>
+                <p class="status-bar-field">https://makaip.com/</p>
+            </div>
         </div>
     </div>
+    <script>
+        function redirectSocials() {
+            if (document.getElementById('radio29').checked) {
+                window.open('https://github.com/makaip');
+            } else if (document.getElementById('radio30').checked) {
+                window.open('https://www.linkedin.com/in/makaip/');
+            } else if (document.getElementById('radio31').checked) {
+                window.open('https://discord.gg/');
+            } else if (document.getElementById('radio32').checked) {
+                window.open('https://www.google.com/');
+            }
+        }
+    </script>
 </body>
-
 </html>
