@@ -7,18 +7,42 @@
     <!-- Windows XP Theme (include only one theme at a time) -->
     <link rel="stylesheet" href="https://unpkg.com/xp.css" />
 
+        <style>
+        /* Additional styling */
+        body {
+            background-image: url('bliss.jpg'); 
+            background-size: 100% auto; /* Makes the image cover the full height */
+            background-repeat: no-repeat;
+        }
+
+        .window {
+            width: 800px;
+            margin: auto;
+            position: absolute; /* Necessary for draggable behavior */
+            top: 100px; /* Set an initial position */
+            left: calc(50% - 400px); /* Center the window */
+        }
+
+        .title-bar {
+            cursor: grab; /* Change cursor to indicate drag area */
+        }
+
+        .title-bar:active {
+            cursor: grabbing; /* Change cursor during active drag */
+        }
+    </style>
 </head>
-<body style="padding: 30px; background-image: url('bliss.jpg'); background-size: 100%;"></body>
-    <div class="window" style="width: 800px; margin: auto;">
-        <div class="title-bar">
-            <div class="title-bar-text">My Portfolio</div>
-            <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize"></button>
-                <button aria-label="Close"></button>
-            </div>
+<body>
+<div class="window" id="draggable-window">
+    <div class="title-bar" id="drag-handle">
+        <div class="title-bar-text">My Portfolio</div>
+        <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
         </div>
-        <div class="window-body">
+    </div>
+    <div class="window-body">
             <menu role="tablist">
                 <button aria-selected="true" id="b1" onclick="
                     document.getElementById('b1').setAttribute('aria-selected', true);
@@ -162,17 +186,67 @@
         </div>
     </div>
     <script>
-        function redirectSocials() {
-            if (document.getElementById('radio29').checked) {
-                window.open('https://github.com/makaip');
-            } else if (document.getElementById('radio30').checked) {
-                window.open('https://www.linkedin.com/in/makaip/');
-            } else if (document.getElementById('radio31').checked) {
-                window.open('https://discord.gg/');
-            } else if (document.getElementById('radio32').checked) {
-                window.open('https://www.google.com/');
-            }
+    // JavaScript to make the window draggable via the title bar
+
+                const draggableWindow = document.getElementById('draggable-window');
+                const dragHandle = document.getElementById('drag-handle');
+
+                // Variables to store position on mousedown
+                let offsetX = 0, offsetY = 0, isDragging = false;
+
+    // Function to start dragging
+    dragHandle.addEventListener('mousedown', (e) => {
+                    isDragging = true;
+                offsetX = e.clientX - draggableWindow.offsetLeft;
+                offsetY = e.clientY - draggableWindow.offsetTop;
+                dragHandle.style.cursor = 'grabbing'; // Change cursor during drag
+                e.preventDefault(); // Prevent text selection
+    });
+
+    // Function to handle the dragging motion with boundary restrictions
+    document.addEventListener('mousemove', (e) => {
+        if (isDragging) {
+                    // Calculate new position
+                    let newLeft = e.clientX - offsetX;
+                let newTop = e.clientY - offsetY;
+
+                // Get the dimensions of the window and screen
+                const windowWidth = draggableWindow.offsetWidth;
+                const windowHeight = draggableWindow.offsetHeight;
+                const screenWidth = window.innerWidth;
+                const screenHeight = window.innerHeight;
+
+                // Constrain within screen bounds
+                newLeft = Math.max(0, Math.min(newLeft, screenWidth - windowWidth));
+                newTop = Math.max(0, Math.min(newTop, screenHeight - windowHeight));
+
+                // Apply constrained position
+                draggableWindow.style.left = `${newLeft}px`;
+                draggableWindow.style.top = `${newTop}px`;
         }
+    });
+
+    // Function to stop dragging
+    document.addEventListener('mouseup', () => {
+        if (isDragging) {
+                    isDragging = false;
+                dragHandle.style.cursor = 'grab'; // Reset cursor
+        }
+    });
+
+                // Redirect function for social media links
+                function redirectSocials() {
+        if (document.getElementById('radio29').checked) {
+                    window.open('https://github.com/makaip');
+        } else if (document.getElementById('radio30').checked) {
+                    window.open('https://www.linkedin.com/in/makaip/');
+        } else if (document.getElementById('radio31').checked) {
+                    window.open('https://discord.gg/');
+        } else if (document.getElementById('radio32').checked) {
+                    window.open('https://www.google.com/');
+        }
+    }
+
     </script>
 </body>
 </html>
