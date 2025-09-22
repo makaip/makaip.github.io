@@ -4,15 +4,13 @@ var header = document.getElementById("header");
 var sticky = header.offsetTop;
 
 function scrollThingy() {
-if (window.pageYOffset > sticky) {
+if (window.pageYOffset >= sticky) {
     header.classList.add("sticky");
 } else {
     header.classList.remove("sticky");
 }
 }
 
-// scripts.js
-// scripts.js
 document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('myModal');
     const modalImg = document.getElementById('modal-img');
@@ -39,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 modalImg.style.display = 'none';
             }
 
-            modal.style.display = 'flex'; // Changed from 'block' to 'flex' for proper centering
+            modal.style.display = 'flex';
         });
     });
 
@@ -57,11 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-
-
-
-
-
 
 document.addEventListener('DOMContentLoaded', function() {
     const elements = document.querySelectorAll('.container');

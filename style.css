@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
 ::selection {
     background: #EBDBB2;
     color: #282828;
@@ -15,6 +23,7 @@ body {
 h1 {
     font-family: "Red Hat Display", sans-serif;
     font-size: 450%;
+    margin-bottom: 0px;
 }
 
 h2 {
@@ -38,12 +47,12 @@ button {
     background-color: #EBDBB2;
     border: none;
     padding: 5px 10px;
-    margin: 3px;
+    margin: 2px;
     border-radius: 4px;
     font-size: 100%;
     font-family: "Fira Code", monospace;
     font-weight: 500;
-    transition-duration: 200ms;
+    transition-duration: 100ms; 
 }
 
 button p {
@@ -148,32 +157,66 @@ img {
     padding-bottom: 20vh;
     width: 100%;
 
+    height: calc(70vh - 68px);
+
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 
-    background-image: url("./Valley1_makaip.JPG");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)), url("./Valley1_makaip.JPG");
 }
 
 .header {
     overflow: hidden;
     background: #1D2021;
     text-align: center;
-    display: block;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
     z-index: 1;
+    box-sizing: border-box;
+}
+
+.header-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 940px;
+    margin: auto;
+}
+
+.header-title, .header-links {
+    flex: 1;
+}
+
+.header-buttons {
+    flex: 5;
+    text-align: center;
+}
+
+.header-title {
+    text-align: left;
+}
+
+.header-buttons {
+    text-align: center;
+}
+
+.header-links {
+    text-align: right;
 }
 
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
+    box-sizing: border-box;
 }
   
 .sticky + .main {
-    padding-top: 50px;
+    padding-top: 65px;
 }
 
 .image-grid {
@@ -189,7 +232,7 @@ img {
     width: 100%;
     padding-top: 100%;
     border-radius: 4px;
-    transition-duration: 250ms;
+    transition-duration: 150ms; 
 }
 
 .image-item:hover {
@@ -212,6 +255,36 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
+}
+
+.card-item {
+    flex: 30;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -25px;
+}
+
+.project-title {
+    flex: 1;
+}
+
+.project-skills {
+    flex: 1;
+    text-align: right;
+    margin-left: 15px;
+    margin-top: 2px;
+}
+
+.skill-icon {
+    height: 30px;
+}
+
+.full-width-img {
+    width: 100%;
 }
 
 .modal {
