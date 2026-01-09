@@ -20,13 +20,10 @@
                 <a class="nav-link active" href="#home">Home</a>
             </li>
             <li class="nav-item" role="presentation">
-                <a class="nav-link active" href="#about">About</a>
-            </li>
-            <li class="nav-item" role="presentation">
                 <a class="nav-link" href="#code">Code</a>
             </li>
             <li class="nav-item" role="presentation">
-                <a class="nav-link" href="#art">Art</a>
+                <a class="nav-link" href="#photography">Pictures</a>
             </li>
             <li class="nav-item" role="presentation">
                 <a class="nav-link" href="#music">Music</a>
@@ -109,49 +106,8 @@
                 This website is currently under construction.
             </marquee>
         </div>
-
-        <div class="container" id="about">
-            <h1>about me</h1>
-            <div style="display: flex; flex-direction: row;">
-                <div style="flex-grow: 1;">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum nisi leo, non
-                        tristique
-                        tellus
-                        porta et. Nullam vehicula eros eget purus vulputate, eget posuere ligula gravida. Aliquam erat
-                        volutpat.
-                        Nullam semper, lorem nec posuere vulputate, massa odio pretium dolor, vitae lobortis quam mi
-                        vitae
-                        elit.
-                        Phasellus vel risus congue, fermentum neque at, mollis nulla. Morbi erat velit, blandit sed dui
-                        quis,
-                        congue
-                        convallis ante. Integer interdum ligula vel purus ullamcorper, ac venenatis sem consequat. Nunc
-                        et
-                        commodo
-                        massa. Vivamus eleifend porta neque vitae tempor. Ut risus dolor, semper eu suscipit sit amet,
-                        fringilla
-                        at
-                        neque.</p>
-                    <p>
-                        Vestibulum eu ante justo. Integer eget ante vitae nunc molestie vestibulum ut a dui. Sed
-                        vestibulum
-                        magna vel justo pharetra, in malesuada lorem elementum. Curabitur non nunc lacinia, scelerisque
-                        odio
-                        quis, vulputate arcu. Maecenas risus nisi, venenatis vitae tempor sit amet, auctor id magna. In
-                        dolor
-                        lacus, ornare id sem quis, consequat dapibus est.
-                    </p>
-                </div>
-                <div style="flex-grow: 3;">
-                    <img src="media/pictures/halftone_cave.png"
-                        style="max-width: 300px; height: auto; margin-left: 30px;">
-                </div>
-            </div>
-
-        </div>
-        <br>
         <div class="container" id="code">
-            <h1>my code</h1>
+            <h1>code</h1>
 
             <div class="infobox1">
                 <div style="display: flex; flex-direction: row; border-bottom: 1.5px solid black">
@@ -238,9 +194,38 @@
             </div>
         </div>
         <br>
-        <div class="container" id="art">
-            <h1>my art</h1>
-            <p>yayayay</p>
+        <div class="container" id="photography">
+            <h1>photography</h1>
+            <br>
+            <div class="row" data-masonry='{"percentPosition": true }'>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <img src="media/pictures/halftone_archway.png" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <img src="media/pictures/halftone_bay.png" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <img src="media/pictures/halftone_boat.png" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <img src="media/pictures/halftone_cave.png" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <img src="media/pictures/halftone_mountain.png" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <img src="media/pictures/halftone_store.png" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <img src="media/pictures/halftone_waterfall.png" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <img src="media/pictures/halftone_street.png" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <img src="media/pictures/halftone_shack.png" style="width: 100%; height: auto;">
+                </div>
+            </div>
             <p>Why is my work half-toned?</p>
             <p>
                 Essentially, its to prevent my work from getting stolen or trained on. It also looks very cool and fits
@@ -249,12 +234,12 @@
         </div>
         <br>
         <div class="container" id="music">
-            <h1>my music</h1>
+            <h1>music</h1>
             <p>yayayay</p>
         </div>
         <br>
         <div class="container" id="work">
-            <h1>my work</h1>
+            <h1>work</h1>
             <div class="infobox1">
                 <div style="display: flex; flex-direction: row; border-bottom: 1.5px solid black">
                     <div style="flex-grow: 5;">
@@ -331,6 +316,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+
 </body>
 
 </html>
