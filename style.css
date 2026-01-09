@@ -1,375 +1,216 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
-}
-
-::selection {
-    background: #EBDBB2;
-    color: #282828;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-    background-color: #282828;
-    color: #EBDBB2;
-}
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Lexend+Deca:wght@100..900&family=Libre+Barcode+39+Extended&family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
 
 h1 {
-    font-family: "Red Hat Display", sans-serif;
-    font-size: 450%;
-    margin-bottom: 0px;
+    font-family: "Belanosima", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 3rem;
+    text-align: center;
 }
 
 h2 {
-    font-family: "Red Hat Display", sans-serif;
-    font-size: 225%;
-    text-align: center;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
 }
 
 h3 {
-    font-family: "Fira Code", monospace;
-    font-weight: 500;
-    font-size: 150%;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
 }
 
-p,ul {
-    font-family: "Inter", sans-serif;
-    font-size: 110%;
+p {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
 }
 
-button {
-    background-color: #EBDBB2;
-    border: none;
-    padding: 5px 10px;
-    margin: 2px;
-    border-radius: 4px;
-    font-size: 100%;
-    font-family: "Fira Code", monospace;
-    font-weight: 500;
-    transition-duration: 100ms; 
+body {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
 }
 
-button p {
-    vertical-align: super;
-}
+blockquote {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 
-button span {
-    vertical-align: bottom;
-}
-
-button:hover {
-    background-color: #D65D0E;
-}
-
-a {
-    color: #458588;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-a:visited {
-    color: #B16286;
-}
-
-footer {
-    background-color: #1D2021;
-    margin-bottom: -20px;
-    padding: 20px;
-    padding-top: 0px;
+    font-size: 1.25rem;
     text-align: center;
 }
 
-img {
-    border-radius: 4px;
-    margin: 2px;
+.text-over-image {
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
-.main,.em-main {
-    max-width: 900px;
-    width: 90%;
-    margin: auto;
-}
-
-.em-main {
-    animation-name: em-text;
-    animation-duration: 650ms;
+.text-over-image .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
 }
 
 .container {
-    border: 1px solid #3a3a3a;
-    margin-left: -20px;
-    padding-left: 20px;
-    margin-right: -20px;
-    padding-right: 20px;
-    margin-top: 10px;
-    padding-bottom: 20px;
-    border-radius: 6px;
-
-    display: flex;
-
-    transition-duration: 0.125s;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.5s ease-out 0.2s, transform 0.5s ease-out 0.2s, border ease-out 0.125s;
+    max-width: 800px;
 }
 
-.container.visible {
-    opacity: 1;
-    transform: translateY(0);
+img {
+    border-radius: 10px;
 }
 
-.container.visible:hover {
-    border: 1px solid #928374;
-}
+/* asdfasdf */
 
-.container .text-box {
-    flex: 30;
-}
-
-.container .img-box {
-    flex: 20;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-}
-
-.container .img-box img {    
-    width: 100%;
-    height: calc(100% - 20px);
-    object-fit: cover;
-    border-radius: 4px;
-    margin-top: 20px;
-}
-
-.container .gap {
-    flex: 2;
-}
-
-.em {
-    padding-top: 10vh;
-    padding-bottom: 20vh;
-    width: 100%;
-
-    height: calc(70vh - 68px);
-
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)), url("./Valley1_makaip.JPG");
-}
-
-.header {
-    overflow: hidden;
-    background: #1D2021;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    z-index: 1;
-    box-sizing: border-box;
-}
-
-.header-holder {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 940px;
-    margin: auto;
-}
-
-.header-title, .header-links {
-    flex: 1;
-}
-
-.header-buttons {
-    flex: 5;
-    text-align: center;
-}
-
-.header-title {
+.infobox1 {
+    border: 1.5px solid #000;
+    border-radius: 10px;
+    padding: 0px;
     text-align: left;
 }
 
-.header-buttons {
-    text-align: center;
+.infobox1 div div {
+    padding: 10px;
+    padding-bottom: 0px;
 }
 
-.header-links {
+
+
+/* fontss */
+
+.belanosima-regular {
+    font-family: "Belanosima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.belanosima-semibold {
+    font-family: "Belanosima", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.belanosima-bold {
+    font-family: "Belanosima", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.libre-barcode-39-extended-regular {
+    font-family: "Libre Barcode 39 Extended", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.zalando-sans-expanded-800 {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+.lexend-deca-200 {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.lexend-deca-400 {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lexend-deca-600 {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* devicons */
+.tech-icon {
+    font-size: 24px;
+}
+
+.tech-icon path {
+    fill: #212529;
+}
+
+/* nav-tabs */
+
+.nav-tabs.flex-column {
+    border-right: 1.5px solid #212529 !important;
+    border-bottom: transparent;
+}
+
+.nav-tabs.flex-column .nav-link {
+    border: 1.5px solid transparent;
+    border-radius: 0.375rem 0 0 0.375rem;
+
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+    color: #212529;
+
+    transition: 50ms ease-in-out;
+
     text-align: right;
+
+    border-right: none;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-sizing: border-box;
-}
-  
-.sticky + .main {
-    padding-top: 65px;
+.nav-tabs.flex-column .nav-link:hover,
+.nav-tabs.flex-column {
+    border-color: #212529 transparent #212529 #212529;
 }
 
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 10px;
+.nav-tabs.flex-column .nav-link.active {
+    border-color: #212529 #212529 #212529 #212529;
+    background-color: #212529;
+    color: white;
+    border-right: none;
 }
 
-.image-item {
-    border: 1px solid #3a3a3a;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 100%;
-    border-radius: 4px;
-    transition-duration: 150ms; 
+/* card carosuel */
+
+.card {
+    border: 1.5px solid #212529;
+    border-radius: 10px;
 }
 
-.image-item:hover {
-    border: 1px solid #EBDBB2;
+.card .card-footer {
+    border-top: 1.5px solid #212529;
+    background-color: transparent;
+    vertical-align: middle;
 }
 
-.image-item img, video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-    margin: 0px;
-    border-radius: 0px;
+.card .card-title {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
 }
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
+.card .card-img-top {
+    border-radius: 8px 8px 0 0;
 }
 
-.card-item {
-    flex: 30;
-}
-
-.project-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: -25px;
-}
-
-.project-title {
-    flex: 1;
-}
-
-.project-skills {
-    flex: 1;
-    text-align: right;
-    margin-left: 15px;
-    margin-top: 2px;
-}
-
-.skill-icon {
-    height: 30px;
-}
-
-.full-width-img {
-    width: 100%;
-}
-
-.modal {
-    display: none; 
-    position: fixed; 
-    z-index: 2; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%;
-    overflow: auto; 
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
-    display: flex;
-    justify-content: center;
-}
-
-.modal-content {
-    position: relative;
-    width: 90%;
-    max-width: 800px;
-    text-align: center;
-    margin: auto;
-}
-
-#modal-video {
-    transform: translate(0px, -20vh);
-}
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.modal-media {
-    width: 100%;
-    height: auto;
-    display: none;
-    animation-name: imageModal;
-    animation-duration: 500ms;
-    border-radius: 4px;
-}
-
-@keyframes imageModal {
-    from {
-        transform:translateY(10px);
-        opacity: 0.5;
-        filter: blur(8px);
-    }
-    to {
-        transform:translateY(0px);
-        opacity: 1;
-        filter: blur(0px);
-    }
-}
-
-@keyframes em-text {
-    from {
-        transform: scale(0.95) translateY(20px);
-        filter: blur(4px);
-        
-    }
-    to {
-        transform: translateY(0px);
-        filter: blur(0px);
-    }
-}
-
-@keyframes container {
-    from {
-        transform:scale(0.99);
-        opacity: 0.25;
-    }
-    to {
-    }
+.card img {
+    border-radius: 0;
 }

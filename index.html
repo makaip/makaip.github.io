@@ -1,305 +1,586 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    </head>
-    <body>
-        <div class="em">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Makai P.</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-tabs" data-bs-smooth-scroll="true" style="position: relative;">
+    <div class="d-flex align-items-start" style="position: fixed; right: calc(800px + (100% - 800px) / 2); top: 200px;"
+        id="navbar-tabs">
+        <ul class="nav nav-tabs flex-column me-3" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" href="#code">Code</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" href="#work">Work</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" href="#photography">Pictures</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" href="#people">People</a>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <br><br>
+        <div class="container" id="home">
+            <div class="title">
+                <p style="margin-bottom: -45px; margin-left: 20%;">Hey! It's the...</p>
+                <h1 class="belanosima-semibold" style="text-align: center; font-size: 7rem">worldwide</h1>
+                <svg width="400" height="75" style="margin: auto; display: block; margin-top: -60px">
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-size="50"
+                        class="zalando-sans-expanded-800" fill="white" stroke="black" stroke-width="3.5"
+                        stroke-linejoin="round" paint-order="stroke fill">
+                        INTERWEBS
+                    </text>
+                </svg>
+            </div>
+
+
+            <div class="text-over-image">
+                <img src="media/external/vortex2.jpg"
+                    style="max-width: 775px; width: 100%; aspect-ratio: 9 / 5; object-fit: cover; display: block; margin: auto;"></img>
+                <h2 class="zalando-sans-expanded-800 centered">welcome to my website</h2>
+            </div>
             <br>
-            <div class="em-main">
-                <h1>Welcome to my website!</h1>
-                <p>My humble corner of the internet. Enjoyer of coding, Blender, music creation, and such.</p>
-            </div>
-        </div>
-        <div class="header" id="header">
-            <div class="header-holder">
-                <p class="header-title">makaip</p>
-                <div class="header-buttons">            
-                    <button onclick="document.querySelector('#about-title').scrollIntoView({behavior: 'smooth', block: 'center'});">About</button>
-                    <button onclick="document.querySelector('#code-title').scrollIntoView({behavior: 'smooth', block: 'center'});">Code</button>
-                    <button onclick="document.querySelector('#blender-title').scrollIntoView({behavior: 'smooth', block: 'center'});">Blender</button>
-                    <button onclick="document.querySelector('#experience-title').scrollIntoView({behavior: 'smooth', block: 'center'});">Work</button>
-                </div>
-                <div class="header-links">
-                        <a href="https://github.com/makaip"><img src="https://skillicons.dev/icons?i=github" height=36rem></a>
-                        <a href="https://www.linkedin.com/in/makai-p-8a9953302/"><img src="https://skillicons.dev/icons?i=linkedin" height=36rem></a>
-                </div>
-            </div>
-        </div>
 
-        <div class="main">
-            <div id="about">
-                <h2 id="about-title">About</h2>
-                <p>Hello! My name is Makai, and I am familiar with these tools.</p>
-                <div style="text-align: center;">
-                    <img src="https://skillicons.dev/icons?i=html,css,js,flask">
-                    <img src="https://skillicons.dev/icons?i=py,c,cs,cpp">
-                    <img src="https://skillicons.dev/icons?i=matlab,latex,anaconda,bash">
-                    <img src="https://skillicons.dev/icons?i=unity,blender,threejs,supabase">
-                    <img src="https://skillicons.dev/icons?i=pytorch,sklearn,sqlite,gcp">
-                    <img src="https://skillicons.dev/icons?i=cloudflare,aws,nginx,raspberrypi">
-                </div>
-                <br>
-                <br>
-            </div>
-            <div id="code">
-                <h2 id="code-title">Projects</h2>
-                <div class="container">
-                    <div class="img-box">
-                        <img src="projects/calclynx.png" class="full-width-img">
+            <div class="infobox1">
+                <div style="display: flex; flex-direction: row; border-bottom: 1.5px solid black">
+                    <div style="flex-grow: 3;">
+                        <h2 class="zalando-sans-expanded-800">Makai Pindell</h2>
                     </div>
-                    <span class="gap"></span>
-                    <div class="text-box">
-                        <div class="project-header">
-                            <h3 class="project-title">CalcLynx</h3>
-                            <div class="project-skills">
-                                <img src="https://skillicons.dev/icons?i=html,css,js,supabase" class="skill-icon">
-                            </div>
-                        </div>
-                        <p>A stack-based infinite LaTeX math whiteboard that lets you create, edit, and manage mathematical expressions using MathQuill and MathGene. </p> 
-                        <a href="https://calclynx.makaip.com/"><button>Try It</button></a>
-                        <a href="https://github.com/makaip/calclynx"><button>GitHub</button></a>
+                    <div style="flex-grow: 3; border-left: 1.5px solid black; text-align: center;">
+                        <p style="margin-bottom: -10px; margin-top: 5px; display: inline-block;"><a href="https://github.com/makaip">GitHub</a> | <a href="https://www.linkedin.com/in/makaip/">LinkedIn</a></p>
+                    </div>
+                    <div style="flex-grow: 2; border-left: 1.5px solid black; text-align: center;">
+                        <p style="margin-bottom: -10px; margin-top: 5px; display: inline-block;">Located in Florida</p>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="text-box">
-                        <div class="project-header">
-                            <h3 class="project-title">5-HT Freezing</h3>
-                            <div class="project-skills">
-                                <img src="https://skillicons.dev/icons?i=python,pytorch,sklearn" class="skill-icon">
-                            </div>
-                        </div>
-                        <p>Developing a deep learning model that predicts freezing behavior (fear response) from 5-HT recordings in the orbitofrontal cortex using a 1D CNN backbone with BiLSTM. The model is trained on fiber photometry recordings and computer-scored freezing data, which I am working with at my research internship for the <em>Max Planck Florida Institute for Neuroscience</em>. </p>
-                    </div>
-                    <span class="gap"></span>
-                    <div class="img-box">
-                        <img src="projects/freeze.png" class="full-width-img">
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="img-box">
-                        <img src="projects/hboi.png" class="full-width-img">
-                    </div>
-                    <span class="gap"></span>
-                    <div class="text-box">
-                        <div class="project-header">
-                            <h3 class="project-title">CDOM Detection</h3>
-                            <div class="project-skills">
-                                <img src="https://skillicons.dev/icons?i=python" class="skill-icon">
-                            </div>
-                        </div>
-                        <span class="gap"></span>
-                        <p>Working at the <em>Harbor Branch Oceanographic Institute</em> to develop a ML approach for identifying surface expressions of upwelling in the Northern Gulf of Mexico using RS data. We can then use RS-derived estimates of CDOM to assess how these upwelling events may influence surface DOC dynamics. </p>
-                        <a href=""><button>GitHub</button></a>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="text-box">
-                        <div class="project-header">
-                            <h3 class="project-title">Mathematix</h3>
-                            <div class="project-skills">
-                                <img src="https://skillicons.dev/icons?i=html,css,js" class="skill-icon">
-                            </div>
-                        </div>
-                        <p>A nodeblock-based math webapp designed to make graphing calculators more accessible and easy to use. Using node blocks, the interface allows users to drag and drop mathematical operations, enabling them to connect them together in order to calculate certain functions. </p> 
-                        <p>The project won first place in the <em>YCW QBitX Hacks</em> Hackathon among over 590 participants nationwide. I also animated a short advertisment in Blender that you can view <a onclick="document.querySelector('#mathematix-vid').scrollIntoView({behavior: 'smooth'});">here</a>.</p>
-                        <a href="https://makaip.com/mathematix"><button>Try It</button></a>
-                        <a href="https://devpost.com/software/mathematix"><button>DevPost</button></a>
-                        <a href="https://github.com/makaip/mathematix"><button>GitHub</button></a>
-                    </div>
-                    <span class="gap"></span>
-                    <div class="img-box">
-                        <img src="projects/mtx.png" class="full-width-img">
-                    </div>
-                </div>                
-                <div class="container">
-                    <div class="img-box">
-                        <img src="projects/clev.png" class="full-width-img">
-                    </div>
-                    <span class="gap"></span>
-                    <div class="text-box">
-                        <div class="project-header">
-                            <h3 class="project-title">Clevulator</h3>
-                            <div class="project-skills">
-                                <img src="https://skillicons.dev/icons?i=unity,cs,blender" class="skill-icon">
-                            </div>
-                        </div>
-                        <p>Written in C# and inspired by <em>Goat Simulator</em>, the game was created in Unity to simulate the experience of being Mr. Clevenger (my former history teacher). Characters were animated using motion capture data from Adobe Mixamo, and Unity Navmesh allows NPCs to walk, talk, and interact with their environment. The environment was created using reality capture software <em>Scaniverse</em> to create accurately-scaled models, which were cleaned up and merged in Blender. </p> 
-                        <a href="https://clevulator.makaip.com/"><button>Try It</button></a>
-                    </div>
-                </div>
-                <div class="card-container">
-                    <div class="container card-item">
-                        <div class="text-box">
-                            <div class="project-header">
-                                <h3 class="project-title">Bakify</h3>
-                            </div>
-                            <p>An online web application originally created for Ms. Baker's class designed to help users improve their writing by identifying and replacing analytical never-words. The application automatically switches to dark mode at night for optimal user experience, and was also my first web dev project.</p>
-                            <a href="https://bakify.page"><button>Try It</button></a>
-                            <a href="https://github.com/makaip/bakify"><button>GitHub</button></a>
-                        </div>
-                    </div>
-                    <div class="container card-item">
-                        <div class="text-box">
-                            <div class="project-header">
-                                <h3 class="project-title">Opentest</h3>
-                            </div>
-                            <p>An online test-taking app designed to look just like the PSAT/SAT using simple Javascript, HTML, and CSS. You can upload custom quizzes and tests in CSV format and set a timer for a set time or unlimited time. You can also pause the test and resume at any time. </p>
-                            <a href="https://makaip.com/opentest"><button>Try It</button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-container">
-                    <div class="container card-item">
-                        <div class="text-box">
-                            <h3>Where2Meet</h3>
-                            <p>Co-developed full stack webapp inspired by <a href="https://when2meet.com">When2Meet</a>, except for location instead of time.  </p>
-                            <a href="https://makaip.com/where2meet"><button>Try It</button></a>
-                            <a href="https://github.com/makaip/where2meet"><button>GitHub</button></a>
-                        </div>
-                    </div>
-                    <div class="container card-item">
-                        <div class="text-box">
-                            <h3>Urinal Splashback Calculator</h3>
-                            <p>Vibe-coded out of curiousity to see how the angle of stream intersection affects splashback force. </p>
-                            <a href="https://makaip.com/p-sim"><button>Try It</button></a>
-                            <a href="https://github.com/makaip/p-sim"><button>GitHub</button></a>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <br>
-            </div>
-            <div id="blender">
-                <h2 id="blender-title">Blender Renders</h2>
-                <p>These were all very fun to make. I have extensive experience in CAD and hard-surface modeling, as well as texturing,
-                    compositing, animation, and lighting. I also used to teach Blender online. Some addons that I used were Traffiq,
-                    Botaniq, Grasswald, Blenderkit, and Ian Hubert's Camera Shake addon.</p>
                 <div>
-                    <div class="image-grid">
-                        <div class="image-item" data-type="img" data-src="/renders/RetroLivingroom.png"><img id="1" src="/renders/RetroLivingroom.png" alt=""></div>
-                        <div class="image-item" data-type="img" data-src="/renders/Computer1.gif"><img id="2" src="/renders/Computer1.gif" alt=""></img></div>
-                        <div class="image-item" data-type="img" data-src="/renders/Computer4.png"><img id="3" src="/renders/Computer4.png" alt=""></div>
-                        <div class="image-item" data-type="video" data-src="/renders/Mathematix.mp4"><span id="mathematix-vid"></span><video id="4" src="/renders/EeveeAbstract.mp4" alt=""></video></div>
-                        <div class="image-item" data-type="img" data-src="/renders/Field1.png"><img id="5" src="/renders/Field1.png" alt=""></div>
-                        <div class="image-item" data-type="video" data-src="/renders/PlaneFinalWide.mp4"><video id="6" src="/renders/PlaneFinalWide.mp4" alt=""></video></div>
+                    <div>
+                        <p>
+                            I am a dual-enrolled highschool student interested in mechanistic interpretability,
+                            non-euclidean geometry, and mid-century graphic design. I volunteer doing neuroscience
+                            research and oceanographic research, but in my free time I like to make art, music, and code
+                            websites like this one.
+                        </p>
                     </div>
                 </div>
-                <br>
-                <br>
-            </div>
-            <div id="experience">
-                <h2 id="experience-title">Work</h2>
-                <ul>
-                    <li>I attend High School and University</li>
-                    <li>I do data science in a lab that does brain research</li>
-                    <li>I also do data science in a lab that does ocean research</li>
-                    <li>I interned at a company that uses knowledge graphs to accelerate novel drug discovery</li>
-                    <li>I got a grant to do research in LLMs</li>
-                </ul>
-                <br>
-                <br>
-            </div>
-            <div id="affiliates">
-                <h2>Supplementary Shenanigan Affiliates</h2>
-                <div class="card-container">
-                    <div class="container card-item">
-                        <div class="text-box">
-                            <div class="project-header">
-                                <h3 class="project-title">Alex</h3>
-                            </div>
-                            <p>completely stacked and insanely op at coding</p>
-                            <a href="https://www.alexcastronovo.com/"><button>Website</button></a>
-                        </div>
-                    </div>
-                    <div class="container card-item">
-                        <div class="text-box">
-                            <div class="project-header">
-                                <h3 class="project-title">Jossaya</h3>
-                            </div>
-                            <p>goat who stuck with project endeavors thick and thin</p>
-                            <a href="https://jcamille.dev/"><button>Website</button></a>
-                        </div>
-                    </div>
-                                        <div class="container card-item">
-                        <div class="text-box">
-                            <div class="project-header">
-                                <h3 class="project-title">Valerie</h3>
-                            </div>
-                            <p>fellow music maker and collaborator</p>
-                            <a href="https://valenciola.github.io/"><button>Website</button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-container">
-                    <div class="container card-item">
-                        <div class="text-box">
-                            <div class="project-header">
-                                <h3 class="project-title">Zach</h3>
-                            </div>
-                            <p>web dev gordon ramsey who doesent vibe-code websites in big 2025</p>
-                            <a href="https://zachl.tech/"><button>Website</button></a>
-                        </div>
-                    </div>
-                    <div class="container card-item">
-                        <div class="text-box">
-                            <div class="project-header">
-                                <h3 class="project-title">Thandi</h3>
-                            </div>
-                            <p>full stack dev, gamer, and gif connoisseur</p>
-                            <a href="https://str1ke.codes/"><button>Website</button></a>
-                        </div>
-                    </div>
-                    <div class="container card-item">
-                        <div class="text-box">
-                            <div class="project-header">
-                                <h3 class="project-title">Amarnath</h3>
-                            </div>
-                            <p>clocked in low level programming and high level trolling</p>
-                            <a href="https://apatel.co/"><button>Website</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <br>
-                <br>
-                <br>
-                <p>That's pretty much it, but thanks for reading! </p>
-                <p>im prob gonna finish this later i dont rlly feel like working on it rn</p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <p>ok bye lol</p>
-                <br>
-                <br>
             </div>
         </div>
         <br>
+
+        <div class="container">
+            <marquee>
+                Imagine using a marquee. Couldn't be me. Oh wait...
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                This website is currently under construction.
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                This website is currently under construction.
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                This website is currently under construction.
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                This website is currently under construction.
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                This website is currently under construction.
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                This website is currently under construction.
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                This website is currently under construction.
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                This website is currently under construction.
+            </marquee>
+        </div>
         <br>
+        <div class="container" id="code">
+            <h1>code</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-2">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/media/projects/halftone_calclynx2.png" class="card-img-top" alt="..."
+                            style="aspect-ratio: 9 / 5; object-fit: cover; ">
+                        <div class="card-body">
+                            <h5 class="card-title">Calclynx</h5>
+                            <p class="card-text">An infinite LaTeX whiteboard for math notetaking. Submitted to the <a
+                                    href="https://www.congressionalappchallenge.us/" target="_blank"
+                                    rel="noopener noreferrer">2025 Congressional App Challenge</a>. </p>
+                        </div>
+                        <div class="card-footer"
+                            style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                            <div style="margin-bottom: -5px;">
+                                <i class="devicon-supabase-plain tech-icon"></i>
+                                <i class="devicon-bootstrap-plain tech-icon"></i>
+                                <i class="devicon-html5-plain tech-icon"></i>
+                                <i class="devicon-css3-plain tech-icon"></i>
+                                <i class="devicon-javascript-plain tech-icon"></i>
+                            </div>
+                            <div>
+                                <a href="https://calclynx.makaip.com/" target="_blank" rel="noopener noreferrer"><button
+                                        style="--bs-btn-font-size: .75rem;" type="button"
+                                        class="btn btn-outline-dark btn-sm">Website</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/media/projects/halftone_mtx.png" class="card-img-top" alt="..."
+                            style="aspect-ratio: 9 / 5; object-fit: cover; ">
+                        <div class="card-body">
+                            <h5 class="card-title">Mathematix</h5>
+                            <p class="card-text">A visual node-based graphing calculator. Won 1st place in the <a
+                                    href="https://qubitx.devpost.com/project-gallery" target="_blank"
+                                    rel="noopener noreferrer">2024
+                                    QuBitX Hackathon</a>. </p>
+                        </div>
+                        <div class="card-footer"
+                            style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                            <div style="margin-bottom: -5px;">
+                                <i class="devicon-html5-plain tech-icon"></i>
+                                <i class="devicon-css3-plain tech-icon"></i>
+                                <i class="devicon-javascript-plain tech-icon"></i>
+                            </div>
+                            <div>
+                                <a href="https://github.com/makaip/mathematix" target="_blank"
+                                    rel="noopener noreferrer"><button style="--bs-btn-font-size: .75rem;" type="button"
+                                        class="btn btn-outline-dark btn-sm">GitHub</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/media/projects/halftone_clev.png" class="card-img-top" alt="..."
+                            style="aspect-ratio: 9 / 5; object-fit: cover; ">
+                        <div class="card-body">
+                            <h5 class="card-title">Clevulator</h5>
+                            <p class="card-text">A 3D videogame of my history teacher. Used Scaniverse to create 3D scans and Mixamo to rig armatures. </p>
+                        </div>
+                        <div class="card-footer"
+                            style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                            <div style="margin-bottom: -5px;">
+                                <i class="devicon-unity-plain tech-icon"></i>
+                                <i class="devicon-blender-original tech-icon"></i>
+                                <i class="devicon-cplusplus-plain tech-icon"></i>
+                            </div>
+                            <div>
+                                <a href="https://clevulator.makaip.com/" target="_blank"
+                                    rel="noopener noreferrer"><button style="--bs-btn-font-size: .75rem;" type="button"
+                                        class="btn btn-outline-dark btn-sm">Website</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Bakify</h5>
+                            <p class="card-text">A site used to identify and replace the 108 banned "neverwords" in Mrs.
+                                Baker's class. </p>
+                        </div>
+                        <div class="card-footer"
+                            style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                            <div style="margin-bottom: -5px;">
+                                <i class="devicon-html5-plain tech-icon"></i>
+                                <i class="devicon-css3-plain tech-icon"></i>
+                                <i class="devicon-javascript-plain tech-icon"></i>
+                                <i class="devicon-cloudflare-plain tech-icon"></i>
+                            </div>
+                            <div>
+                                <a href="https://bakify.makaip.com/" target="_blank" rel="noopener noreferrer"><button
+                                        style="--bs-btn-font-size: .75rem;" type="button"
+                                        class="btn btn-outline-dark btn-sm">Website</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Aldental</h5>
+                            <p class="card-text">
+                                Co-developed and pitched a dental scanner. National finalist at the <a
+                                    href="https://efest.biz/2025-alumni" target="_blank" rel="noopener noreferrer">2025
+                                    E-Fest Entrepreneurship Competition</a>.
+                            </p>
+                        </div>
+                        <div class="card-footer"
+                            style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                            <div style="margin-bottom: -5px;">
+                                <i class="devicon-python-plain tech-icon"></i>
+                                <i class="devicon-threejs-original tech-icon"></i>
+                                <i class="devicon-ros-original tech-icon"></i>
+                                <i class="devicon-flask-plain tech-icon"></i>
+                            </div>
+                            <div>
+                                <a href="https://efest.biz/finalist/aldental" target="_blank"
+                                    rel="noopener noreferrer"><button style="--bs-btn-font-size: .75rem;" type="button"
+                                        class="btn btn-outline-dark btn-sm">Demo Pitch</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">LLM Undetection</h5>
+                            <p class="card-text">
+                                Recieved a $1,200 grant from <a href="https://www.fau.edu/ouri/undergraduate-grants/"
+                                    target="_blank" rel="noopener noreferrer">FAU's OURI</a>; led a team of six to
+                                programatically obfuscate LLM-generated text using stylometric analysis.
+                            </p>
+                        </div>
+                        <div class="card-footer"
+                            style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                            <div style="margin-bottom: -5px;">
+                                <i class="devicon-matlab-plain tech-icon"></i>
+                                <i class="devicon-python-plain tech-icon"></i>
+                                <i class="devicon-pytorch-original tech-icon"></i>
+                                <i class="devicon-bash-plain tech-icon"></i>
+                            </div>
+                            <div>
+                                <a href="https://github.com/inconspicuous-buisness-venture/chameleon-testing"
+                                    target="_blank" rel="noopener noreferrer"><button
+                                        style="--bs-btn-font-size: .75rem;" type="button"
+                                        class="btn btn-outline-dark btn-sm">GitHub</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <br>
-        <div id="myModal" class="modal" style="display: none;">
-            <span class="close">&times;</span>
-            <div class="modal-content">
-                <img id="modal-img" class="modal-media">
-                <video id="modal-video" class="modal-media" autoplay controls loop></video>
+        <div class="container" id="work">
+            <h1>work</h1>
+            <div class="infobox1">
+                <div style="display: flex; flex-direction: row; border-bottom: 1.5px solid black">
+                    <div style="flex-grow: 5;">
+                        <h4 class="zalando-sans-expanded-800">Max Planck</h4>
+                    </div>
+                    <div style="flex-grow: 3; border-left: 1.5px solid black;">
+                        <p>June 2025—Present</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p class="lexend-deca-200">
+                            At the Max Planck Florida Institute For Neuroscience, I work in the Tian Lab, using
+                            generalized linear models (GLMs), long-short term memory (LSTM), and convolutional neural
+                            networks (CNNs) to quantify relationships between fiber-photometry-recorded serotonin (5-HT)
+                            measurements and fear responses in the ventral tegmental area (VTA) and orbitofrontal cortex
+                            (OFC). I am currently developing tools to automate behavioral analysis and reproject animal
+                            movement. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="infobox1">
+                <div style="display: flex; flex-direction: row; border-bottom: 1.5px solid black">
+                    <div style="flex-grow: 5;">
+                        <h4 class="zalando-sans-expanded-800">Harbor Branch</h4>
+                    </div>
+                    <div style="flex-grow: 3; border-left: 1.5px solid black;">
+                        <p>June 2024—Present</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p class="lexend-deca-200">
+                            In the Geochemical Remote Sensing Lab at the Harbor Branch Oceanographic Institute, I
+                            develop machine learning approaches to quantify sediment-derrived dissolved organic
+                            carbon (DOC) in the Northern Gulf of Mexico (NGOM) using remote sensing (RS). We use colored
+                            dissolved organic matter (CDOM) to locate DOC, and use features such as Chlorophyll-a
+                            (Chl-a) and sea surface temperature (SST) to distinguish its source. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="infobox1">
+                <div style="display: flex; flex-direction: row; border-bottom: 1.5px solid black">
+                    <div style="flex-grow: 5;">
+                        <h4 class="zalando-sans-expanded-800">URIKA [bioworks]</h4>
+                    </div>
+                    <div style="flex-grow: 3; border-left: 1.5px solid black;">
+                        <p>June 2024—November 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p class="lexend-deca-200">
+                            I invented AWS Neptune's first data processing pipeline for NLP-derived biomedical
+                            relational databases using Python, Bash, and SPARQL. This was contrary to the conventional
+                            use of Neo4j and Google Cloud, and I drafted the AWS whitepaper for the project. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container" id="photography">
+            <h1>photography</h1>
+            <br>
+            <div class="row g-2" data-masonry='{"percentPosition": true }'>
+                <div class="col-sm-6 col-lg-4 ">
+                    <img src="media/pictures/halftone_archway.png" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-sm-6 col-lg-8 ">
+                    <img src="media/pictures/halftone_store.png" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-sm-6 col-lg-4 ">
+                    <img src="media/pictures/halftone_boat.png" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-sm-6 col-lg-4 ">
+                    <img src="media/pictures/halftone_cave.png" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-sm-6 col-lg-4 ">
+                    <img src="media/pictures/halftone_mountain.png" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-sm-6 col-lg-4 ">
+                    <img src="media/pictures/halftone_waterfall.png" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-sm-6 col-lg-4 ">
+                    <img src="media/pictures/halftone_street.png" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-sm-6 col-lg-4 ">
+                    <img src="media/pictures/halftone_bay.png" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-sm-6 col-lg-4 ">
+                    <img src="media/pictures/halftone_shack.png" style="width: 100%; height: auto;">
+                </div>
+            </div>
+            <br>
+            <p>Why are the pictures half-toned?</p>
+            <p>
+                Essentially, it's to prevent my work from getting stolen or trained on. It also looks very cool and fits
+                the theme of the website. 
+            </p>
+        </div>
+        <br>
+        <div class="container" id="people">
+            <h1>shenanigan affiliates</h1>
+            <p>Cool people that I make stuff and am in high school with</p>
+            <img src="media/projects/halftone_ch.png" style="width: 100%; height: auto; margin-bottom: 10px;">
+            <br>
+            <div class="row row-cols-1 row-cols-md-3 g-2">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Alex</h5>
+                            <p class="card-text">completely stacked and insanely op at coding
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div style="float: right;">
+                                <a href="https://github.com/alexanderjcs" target="_blank"
+                                    rel="noopener noreferrer"><button style="--bs-btn-font-size: .75rem;" type="button"
+                                        class="btn btn-outline-dark btn-sm">GitHub</button></a>
+                                <a href="https://www.alexcastronovo.com/" target="_blank"
+                                    rel="noopener noreferrer"><button style="--bs-btn-font-size: .75rem;" type="button"
+                                        class="btn btn-outline-dark btn-sm">Website</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Jossaya</h5>
+                            <p class="card-text">completely stacked and insanely op at coding
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div style="float: right;">
+                                <a href="https://github.com/codebyjossaya" target="_blank"
+                                    rel="noopener noreferrer"><button style="--bs-btn-font-size: .75rem;" type="button"
+                                        class="btn btn-outline-dark btn-sm">GitHub</button></a>
+                                <a href="https://jcamille.dev/" target="_blank" rel="noopener noreferrer"><button
+                                        style="--bs-btn-font-size: .75rem;" type="button"
+                                        class="btn btn-outline-dark btn-sm">Website</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Valerie</h5>
+                            <p class="card-text">fellow music maker and collaborator
+
+
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div style="float: right;">
+                                <a href="https://github.com/Valenciola" target="_blank"
+                                    rel="noopener noreferrer"><button style="--bs-btn-font-size: .75rem;" type="button"
+                                        class="btn btn-outline-dark btn-sm">GitHub</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Zach</h5>
+                            <p class="card-text">web dev gordon ramsey who doesent vibe-code websites in big 2025
+
+
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div style="float: right;">
+                                <a href="https://github.com/ZachLTech" target="_blank" rel="noopener noreferrer"><button
+                                        style="--bs-btn-font-size: .75rem;" type="button"
+                                        class="btn btn-outline-dark btn-sm">GitHub</button></a>
+                                <a href="https://zachl.tech/" target="_blank" rel="noopener noreferrer"><button
+                                        style="--bs-btn-font-size: .75rem;" type="button"
+                                        class="btn btn-outline-dark btn-sm">Website</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Thandi</h5>
+                            <p class="card-text">full stack dev, gamer, and gif connoisseur
+
+
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div style="float: right;">
+                                <a href="https://github.com/RealStr1ke" target="_blank"
+                                    rel="noopener noreferrer"><button style="--bs-btn-font-size: .75rem;" type="button"
+                                        class="btn btn-outline-dark btn-sm">GitHub</button></a>
+                                <a href="https://str1ke.codes/" target="_blank" rel="noopener noreferrer"><button
+                                        style="--bs-btn-font-size: .75rem;" type="button"
+                                        class="btn btn-outline-dark btn-sm">Website</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Amarnath</h5>
+                            <p class="card-text">clocked in low level programming and high level trolling
+
+
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div style="float: right;">
+                                <a href="https://github.com/jeebuscrossaint" target="_blank"
+                                    rel="noopener noreferrer"><button style="--bs-btn-font-size: .75rem;" type="button"
+                                        class="btn btn-outline-dark btn-sm">GitHub</button></a>
+                                <a href="https://apatel.co/" target="_blank" rel="noopener noreferrer"><button
+                                        style="--bs-btn-font-size: .75rem;" type="button"
+                                        class="btn btn-outline-dark btn-sm">Website</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Eoghan</h5>
+                            <p class="card-text">completely stacked and insanely op at coding
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div style="float: right;">
+                                <a href="https://github.com/Eoghanmc22" target="_blank"
+                                    rel="noopener noreferrer"><button style="--bs-btn-font-size: .75rem;" type="button"
+                                        class="btn btn-outline-dark btn-sm">GitHub</button></a>
+                                <a href="https://eoghan.codes/" target="_blank" rel="noopener noreferrer"><button
+                                        style="--bs-btn-font-size: .75rem;" type="button"
+                                        class="btn btn-outline-dark btn-sm">Website</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Daniel</h5>
+                            <p class="card-text">completely stacked and insanely op at coding
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div style="float: right;">
+                                <a href="https://github.com/donutgoose" target="_blank"
+                                    rel="noopener noreferrer"><button style="--bs-btn-font-size: .75rem;" type="button"
+                                        class="btn btn-outline-dark btn-sm">GitHub</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">George</h5>
+                            <p class="card-text">completely stacked and insanely op at coding
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div style="float: right;">
+                                <a href="https://github.com/Jubillion" target="_blank" rel="noopener noreferrer"><button
+                                        style="--bs-btn-font-size: .75rem;" type="button"
+                                        class="btn btn-outline-dark btn-sm">GitHub</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
-        <script src="script.js"></script>
-    </body>
-    <footer>
         <br>
-        <h2>makaip.com</h2>
-        <p>I invented everything on this page. </p>
-        <br>
-    </footer>
+        <div class="container" style="border-top: 1.5px black solid; padding-top: 10px;">
+            <p style="float: left;">100% human-made. everything invented by me, except the <a
+                    href="https://www.freepik.com/free-vector/3d-grid-wormhole-illusion-design-element-vector_18722394.htm#fromView=keyword&page=1&position=2&uuid=e8f700ab-d87e-41e8-9004-1fe8b4edf1ee&query=Vortex+grid">vortex
+                    picture</a>. </p>
+            <p style="float: right;">© makaip 2026</p>
+            <br><br>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+
+</body>
+
 </html>
