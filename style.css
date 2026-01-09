@@ -83,6 +83,10 @@ img {
     padding-bottom: 0px;
 }
 
+
+
+/* fontss */
+
 .belanosima-regular {
     font-family: "Belanosima", sans-serif;
     font-weight: 400;
@@ -137,6 +141,16 @@ img {
     font-style: normal;
 }
 
+/* devicons */
+.tech-icon {
+    font-size: 24px;
+}
+
+.tech-icon path {
+    fill: #212529;
+}
+
+/* nav-tabs */
 
 .nav-tabs.flex-column {
     border-right: 1.5px solid #212529 !important;
@@ -171,4 +185,32 @@ img {
     background-color: #212529;
     color: white;
     border-right: none;
+}
+
+/* card carosuel */
+
+.card {
+    border: 1.5px solid #212529;
+    border-radius: 10px;
+}
+
+.card .card-footer {
+    border-top: 1.5px solid #212529;
+    background-color: transparent;
+    vertical-align: middle;
+}
+
+.card .card-title {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.card .card-img-top {
+    border-radius: 8px 8px 0 0;
+}
+
+.card img {
+    border-radius: 0;
 }
