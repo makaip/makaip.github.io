@@ -3,18 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
-    <title>Worldwide Interwebs</title>
+    <title>Makai P.</title>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-tabs" data-bs-smooth-scroll="true" style="position: relative;">
     <div class="d-flex align-items-start" style="position: fixed; right: calc(800px + (100% - 800px) / 2); top: 200px;"
         id="navbar-tabs">
         <ul class="nav nav-tabs flex-column me-3" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" href="#home">Home</a>
+            </li>
             <li class="nav-item" role="presentation">
                 <a class="nav-link active" href="#about">About</a>
             </li>
@@ -35,7 +39,7 @@
 
     <div>
         <br><br>
-        <div class="container">
+        <div class="container" id="home">
             <div class="title">
                 <p style="margin-bottom: -45px; margin-left: 20%;">Hey! It's the...</p>
                 <h1 class="belanosima-semibold" style="text-align: center; font-size: 7rem">worldwide</h1>
@@ -53,7 +57,7 @@
                 <!-- https://www.freepik.com/free-vector/3d-grid-wormhole-illusion-design-element-vector_18722394.htm#fromView=keyword&page=1&position=2&uuid=e8f700ab-d87e-41e8-9004-1fe8b4edf1ee&query=Vortex+grid -->
                 <img src="media/external/vortex2.jpg"
                     style="max-width: 775px; width: 100%; aspect-ratio: 9 / 5; object-fit: cover; display: block; margin: auto;"></img>
-                <h2 class="zalando-sans-expanded-800 centered">Welcome to my website</h2>
+                <h2 class="zalando-sans-expanded-800 centered">welcome to my website</h2>
             </div>
             <br>
 
@@ -63,10 +67,11 @@
                         <h2 class="zalando-sans-expanded-800">Makai P.</h2>
                     </div>
                     <div style="flex-grow: 3; border-left: 1.5px solid black; text-align: center;">
-                        <p style="margin-bottom: -10px; margin-top: 5px; display: inline-block;">actively unemployed</p>
+                        <p style="margin-bottom: -10px; margin-top: 5px; display: inline-block;">GitHub, LinkedIn, and
+                            Discord</p>
                     </div>
                     <div style="flex-grow: 2; border-left: 1.5px solid black; text-align: center;">
-                        <p style="margin-bottom: -10px; margin-top: 5px; display: inline-block;">Jupiter, FL</p>
+                        <p style="margin-bottom: -10px; margin-top: 5px; display: inline-block;">Florida</p>
                     </div>
                 </div>
                 <div>
@@ -107,25 +112,42 @@
 
         <div class="container" id="about">
             <h1>about me</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum nisi leo, non tristique
-                tellus
-                porta et. Nullam vehicula eros eget purus vulputate, eget posuere ligula gravida. Aliquam erat volutpat.
-                Nullam semper, lorem nec posuere vulputate, massa odio pretium dolor, vitae lobortis quam mi vitae elit.
-                Phasellus vel risus congue, fermentum neque at, mollis nulla. Morbi erat velit, blandit sed dui quis,
-                congue
-                convallis ante. Integer interdum ligula vel purus ullamcorper, ac venenatis sem consequat. Nunc et
-                commodo
-                massa. Vivamus eleifend porta neque vitae tempor. Ut risus dolor, semper eu suscipit sit amet, fringilla
-                at
-                neque.</p>
-            <p>
-                Vestibulum eu ante justo. Integer eget ante vitae nunc molestie vestibulum ut a dui. Sed vestibulum
-                magna vel justo pharetra, in malesuada lorem elementum. Curabitur non nunc lacinia, scelerisque odio
-                quis, vulputate arcu. Maecenas risus nisi, venenatis vitae tempor sit amet, auctor id magna. In dolor
-                lacus, ornare id sem quis, consequat dapibus est. Cras sem eros, semper vitae lorem id, rutrum
-                vestibulum erat. Donec sollicitudin, enim ac sodales ultrices, turpis enim ullamcorper erat, eu
-                efficitur velit nulla at mauris.
-            </p>
+            <div style="display: flex; flex-direction: row;">
+                <div style="flex-grow: 1;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum nisi leo, non
+                        tristique
+                        tellus
+                        porta et. Nullam vehicula eros eget purus vulputate, eget posuere ligula gravida. Aliquam erat
+                        volutpat.
+                        Nullam semper, lorem nec posuere vulputate, massa odio pretium dolor, vitae lobortis quam mi
+                        vitae
+                        elit.
+                        Phasellus vel risus congue, fermentum neque at, mollis nulla. Morbi erat velit, blandit sed dui
+                        quis,
+                        congue
+                        convallis ante. Integer interdum ligula vel purus ullamcorper, ac venenatis sem consequat. Nunc
+                        et
+                        commodo
+                        massa. Vivamus eleifend porta neque vitae tempor. Ut risus dolor, semper eu suscipit sit amet,
+                        fringilla
+                        at
+                        neque.</p>
+                    <p>
+                        Vestibulum eu ante justo. Integer eget ante vitae nunc molestie vestibulum ut a dui. Sed
+                        vestibulum
+                        magna vel justo pharetra, in malesuada lorem elementum. Curabitur non nunc lacinia, scelerisque
+                        odio
+                        quis, vulputate arcu. Maecenas risus nisi, venenatis vitae tempor sit amet, auctor id magna. In
+                        dolor
+                        lacus, ornare id sem quis, consequat dapibus est.
+                    </p>
+                </div>
+                <div style="flex-grow: 3;">
+                    <img src="media/pictures/halftone_cave.png"
+                        style="max-width: 300px; height: auto; margin-left: 30px;">
+                </div>
+            </div>
+
         </div>
         <br>
         <div class="container" id="code">
@@ -219,6 +241,11 @@
         <div class="container" id="art">
             <h1>my art</h1>
             <p>yayayay</p>
+            <p>Why is my work half-toned?</p>
+            <p>
+                Essentially, its to prevent my work from getting stolen or trained on. It also looks very cool and fits
+                the theme of the website.
+            </p>
         </div>
         <br>
         <div class="container" id="music">
@@ -228,14 +255,76 @@
         <br>
         <div class="container" id="work">
             <h1>my work</h1>
-            <p>boo</p>
+            <div class="infobox1">
+                <div style="display: flex; flex-direction: row; border-bottom: 1.5px solid black">
+                    <div style="flex-grow: 5;">
+                        <h4 class="zalando-sans-expanded-800">Max Planck</h4>
+                    </div>
+                    <div style="flex-grow: 3; border-left: 1.5px solid black;">
+                        <p>June 2025—Present</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p class="lexend-deca-200">
+                            At the Max Planck Florida Institute For Neuroscience, I work in the Tian Lab, using
+                            generalized linear models, long-short term memory, and convolutional neural networks to
+                            quantify relationships between fiber-photometry-recorded 5-HT measurements and fear
+                            responses in the VTA and OFC. I am currently developing tools to automate behavioral
+                            analysis and reproject animal movement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="infobox1">
+                <div style="display: flex; flex-direction: row; border-bottom: 1.5px solid black">
+                    <div style="flex-grow: 5;">
+                        <h4 class="zalando-sans-expanded-800">Harbor Branch</h4>
+                    </div>
+                    <div style="flex-grow: 3; border-left: 1.5px solid black;">
+                        <p>June 2024—Present</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p class="lexend-deca-200">
+                            In the Geochemical Remote Sensing Lab at the Harbor Branch Oceanographic Institute, I
+                            develop machine learning approaches to quantify sediment-derrived dissolved organic
+                            carbon (DOC) in the Northern Gulf of Mexico (NGOM) using remote sensing (RS). We use colored
+                            dissolved organic matter (CDOM) to locate DOC, and use features such as Chlorophyll-a
+                            (Chl-a) and sea surface temperature (SST) to distinguish its source.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="infobox1">
+                <div style="display: flex; flex-direction: row; border-bottom: 1.5px solid black">
+                    <div style="flex-grow: 5;">
+                        <h4 class="zalando-sans-expanded-800">URIKA [bioworks]</h4>
+                    </div>
+                    <div style="flex-grow: 3; border-left: 1.5px solid black;">
+                        <p>June 2024—November 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p class="lexend-deca-200">
+                            I created AWS Neptune's first data processing pipeline for NLP-derived biomedical
+                            relational databases using Python, Bash, and SPARQL.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <br>
-        <div class="container">
+        <br><br>
+        <div class="container" style="border-top: 1.5px black solid; padding-top: 10px;">
             <p style="float: left;">100% human-made. everything invented by me, except the <a
                     href="https://www.freepik.com/free-vector/3d-grid-wormhole-illusion-design-element-vector_18722394.htm#fromView=keyword&page=1&position=2&uuid=e8f700ab-d87e-41e8-9004-1fe8b4edf1ee&query=Vortex+grid">vortex
                     picture</a>. </p>
             <p style="float: right;">© makaip 2026</p>
+            <br><br>
         </div>
     </div>
 

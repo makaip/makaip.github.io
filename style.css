@@ -140,7 +140,7 @@ img {
 
 .nav-tabs.flex-column {
     border-right: 1.5px solid #212529 !important;
-    border-bottom: none;
+    border-bottom: transparent;
 }
 
 .nav-tabs.flex-column .nav-link {
